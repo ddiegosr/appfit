@@ -8,4 +8,5 @@
     <string name="btnFacebook">Facebook</string>
     <string name="btnGoogle">Google</string>
     <string name="txtPasswordForgot">Esqueceu sua senha?</string>
+    <string name="title_activity_home">Home</string>
 </resources>
