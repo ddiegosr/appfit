@@ -1,0 +1,11 @@
+<resources>
+    <string name="signUpHint">Ainda não tem conta? Cadastre-se aqui</string>
+    <string name="txtBtnLogin">LOGIN</string>
+    <string name="edtTxtEmailHint">E-mail</string>
+    <string name="edtTxtPasswordHint">Senha</string>
+    <string name="app_name">AppFit</string>
+    <string name="logoContentDesc">AppFit</string>
+    <string name="btnFacebook">Facebook</string>
+    <string name="btnGoogle">Google</string>
+    <string name="txtPasswordForgot">Esqueceu sua senha?</string>
+</resources>
