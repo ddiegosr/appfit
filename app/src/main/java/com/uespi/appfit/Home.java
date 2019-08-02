@@ -1,5 +1,6 @@
 package com.uespi.appfit;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -24,6 +25,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -116,17 +118,21 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+            Intent intent = new Intent(this, Home.class);
+            ((AppCompatActivity) this).startActivityForResult(intent, 1001);
+        } else if (id == R.id.nav_statistics) {
+            Toast.makeText(this, "Estatisticas de ganho", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_evaluation) {
+            Toast.makeText(this, "Solicitar avaliação", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_notifications) {
+            Toast.makeText(this, "Notificações", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_profile) {
+            Toast.makeText(this, "Editar perfil", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.nav_logout) {
+            Intent intent = new Intent(this, MainActivity.class);
+            ((AppCompatActivity) this).startActivityForResult(intent, 1001);
+        } else if (id == R.id.nav_training) {
+            Toast.makeText(this, "Lista de treinos", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
